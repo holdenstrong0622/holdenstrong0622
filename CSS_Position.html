@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lange="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title>CSS Positioning Example</title>
+        <style>
+            main{
+                position: relative;
+            }
+            section{
+                border: 1px solid black;
+                color:white;
+                display: inline-block;
+                width: 200px;
+            }           
+            .Section1{
+                background-color: aqua;
+                top: 10px;
+                right: 10px;
+            }
+            .Section2{
+                position: relative;
+                background-color: blue;
+                top: -2px;
+                right: 2px;
+            }
+            
+            .Section3{
+                background-color: red;
+                top: 75%;
+                right: 10%;
+            }
+            
+            .Section4{
+                background-color: green;
+                top: 10px;
+                left: 10px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <main>
+            <section class="Section1">
+                <H1>Section 1</H1>
+            </section>
+            <section class="Section2">
+                <H1>Section 2</H1>
+            </section>
+            <section class="Section3">
+                <H1>Section 3</H1>
+            </section>
+            <section class="Section4">
+                <H1>Section 4</H1>
+            </section>
+        </main>
+
+    </body>
+</html>
