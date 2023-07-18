@@ -2,4 +2,81 @@
 <html lang="en">
     <!--    TODO: Create a form for practice
     Fun Idea: Something Pokemon Related Perhaps -->
+    <head>
+        <title>Pokemon Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <style>
+            label{
+                display: block;
+            }
+            ul{
+                list-style:none;
+                padding:0px;
+            }
+            .submitButton{
+                padding: 2em 2em;
+            }
+        </style>
+
+    </head>
+    <body>
+        <form id="formOne" action="#" method="get">
+            <fieldset>
+                <legend>User Information</legend>
+                <ul>
+                    <li>
+                        <label for="username">Enter your username:</label>
+                        <input name="username" id="username">
+                    </li>
+                    <li>
+                        <label for="contact">What is the best way to contact you?</label>
+                        <select id="contact" id="contact">
+                            <optgroup>
+                                <option value="Email">Email</option>
+                                <option value="Phone">Phone</option>
+                                <option value="Other">Other</option>
+                            </optgroup>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="otherBox">If other please let us know the best way to reach you</label>
+                        <textarea placeholder="" cols="50" rows="5"></textarea>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+            <ul>
+                <li>
+                    <label for="favPoke">What is your favorite Pokemon?</label>
+                    <input name="favPoke" id="favPoke">
+                </li>
+                <li>
+                    <label for="favGen">What is your favorite Pokemon generation?</label>
+                    <select id="favGen" id="favGen">
+                            <optgroup>
+                                <option value="G1">1</option>
+                                <option value="G2">2</option>
+                                <option value="G3">3</option>
+                                <option value="G4">4</option>
+                                <option value="G5">5</option>
+                                <option value="G6">6</option>
+                                <option value="G7">7</option>
+                                <option value="G8">8</option>
+                                <option value="G9">9</option>
+                            </optgroup>
+                    </select>
+                </li>
+                <li>
+                    <label for="favSpinoff">What is your favorite pokemon spinoff game?</label>
+                    <input name="favSpinoff" id="favSpinoff">
+                    <label for="favGimmick">What is your favorite Pokemon gimmick? (i.e. Terrastilization, Mega Evoution, Regional Variants, etc.)</label>
+                    <input name="favGimmick" id="favGimmick">
+                </li>
+            </ul>
+            </fieldset>
+            <button class="submitButton" type="submitButton" >Submit</button>
+        </form>
+    </body>
 </html>
