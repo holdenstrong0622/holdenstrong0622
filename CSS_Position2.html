@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name ="description" content="This is a CSS position practice exercise">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title>Title</title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                line-height: inherit;
+                font-family: inherit;
+                box-sizing: border-box;
+            }
+
+            main{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+
+            }
+
+            div{
+
+                border: solid 1px black;
+                /* float: left; */
+                /* height: 15vh;
+                width: 15vh; */
+            }
+
+            #one{
+                flex-basis: 20vh;
+                flex-grow: 0;
+                flex-shrink: 0;
+            }
+
+            #two{
+                flex-basis: 25%;
+                flex-grow: 0;
+                flex-shrink: 0;
+            }
+
+            #three{
+                flex-basis:35%;
+                flex-grow: 0;
+                flex-shrink: 0;
+            }
+            .header, .footer{
+                height: fit-content;
+            }
+
+            main, header, footer{
+                clear:both;
+            }
+
+            /* #one{
+                position:static;
+                top:50vh;
+            }
+
+            #two{
+                position: static;
+                left: 0vh;
+                top: 0vh;
+            }
+
+            #two h1{
+                position: absolute;
+                top:10%;
+                left:10%;
+            } */
+            
+            .card{
+                height: auto;
+                margin-top: 0px;
+            }
+
+            .card img{
+                position: relative;
+                top:0%;
+                left:0%;
+            }
+
+            ul{
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                padding: 2em;
+                background-color: beige;
+            }
+            li{
+                margin: 0 .2vw;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Header</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/Class4.html">Class 4</a>
+                    </li>
+                    <li>
+                        <a href="/O'Reilly_BookExercises/exercise2.04.html">Exercise 2.4</a>
+                    </li>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+
+                </ul>
+            </nav>
+        
+            <header>
+        <main>
+            <div id="one" class="card"><img src="IMG_1164.JPG" width = "100px" height="150px"><h1>One</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quisquam perferendis molestias omnis consectetur quis quod. Sequi magni beatae dolor ad sunt? Dolores officiis aliquam consequuntur quod provident officia cum?</p></div>
+            <div id="two"><h1>Two</h1></div>
+            <div id="three"><h1>Three</h1></div>
+        <main>
+        <footer>Footer</footer>
+    </body>
+</html>
