@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exercise 6.02: Device Orientation</title>
+        <style>
+            * {
+                margin:0;
+                
+            }
+
+            header{
+                text-align: center;
+            }
+
+            nav ul{
+                list-style: none;
+                text-align: center;
+            }
+
+            nav li{
+                display: inline-block;
+                margin-right: 5px;
+                padding-right: 5px;
+                border-right: 5px;
+            }
+
+            nav li a{
+                color: black;
+                text-decoration: none;
+            }
+
+            nav li a:hover{
+                text-decoration: underline;
+            }
+
+            nav li:last-child{
+                border-right: 0;
+                padding-right: 0;
+                margin-right: 0;
+            }
+
+            article h1, article p{
+                margin-bottom: 10px;
+            }
+
+            footer{
+                background: black;
+                text-align: center;
+                color:white;
+            }
+
+            @media (orientation: portrait){
+                header{
+                    /* display: flex; */
+                    align-items: center;
+                }
+
+                nav{
+                    margin-left: 20px;
+                }
+
+                article{
+                    columns: 100px 2;
+                }
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <img src="https://dummyimage.com/200x100/000/fff&text=Logo" alt="" />
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Nav</a></li>
+                    <li><a href="">Nav</a></li>
+                    <li><a href="">Nav</a></li>
+                </ul>
+            </nav>
+        </header>
+        <article>
+            <h1>Video Review</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores rem mollitia, nostrum esse quibusdam ipsum sunt soluta pariatur delectus fugit eius quas neque consectetur quae iusto, quis ea porro debitis!
+            </p>
+            <p>
+                Donec et al. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo repudiandae consectetur earum, deserunt nesciunt voluptate numquam quasi recusandae, velit rerum sunt minus laudantium quaerat autem et error sint odit quae.
+            </p>
+            <p>
+                Suspendisse among us
+            </p>
+            <p>
+                Vestibulum ante iguana yep for sure
+            </p>
+        </article>    
+        <footer>
+            <p>
+                Website Author Name (Could be anyone but they're probably really cool)
+            </p>
+        </footer>
+    </body>
+</html>

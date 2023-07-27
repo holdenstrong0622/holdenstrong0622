@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, intitial-scale=1">
+        <title>Example for resposive design</title>
+        <style>
+            /*For mobile use*/
+            .menu_list, .menu_choice{
+                list-style: none;
+                margin:0px;
+                padding:0px;
+            }
+
+            .menu_choice{
+                border-style: outset;
+                margin: .5em;
+            }
+
+            .menu_choice a{
+                color:white;
+                background-color: rgb(44, 97, 29);
+                text-decoration: none;
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                line-height: 2em;
+            }
+
+            #LogoPicture{
+                width: 100vw;
+                height: 15vh;
+                background-image: url(IMG_1164.JPG);
+                background-size: cover;
+            }
+
+            /*Screens 480px or MORE*/
+            @media screen and (min-width: 480) {
+                .menu_list{
+                    
+                    flex-direction: row;    
+                }
+                #LogoPicture{
+                    background-image: url(IMG_1164.JPG);
+                    }
+            }
+
+
+            /*For Tablets*/
+            @media screen and (min-width:300px) and (max-width:720px){
+                #LogoPicture{
+                    background-image: url(IMG_1164.JPG);
+                }
+            }
+
+
+            @media screen and (min-width: 721px) {
+                #LogoPicture{
+                    background-image: url(IMG_1164.JPG);
+                }
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div id="LogoPicture"> </div>
+        </header>
+        <nav class="menu">
+            <ul class="menu_list">
+                <li class="menu_choice"><a href="robot.html">See my Robot</a></li>
+                <li class="menu_choice"><a href="CSS_Position.html">CSS Position Examples</a>
+                <li class="menu_choice"><a href="CSSPosition2.html">CSS Other Position Examples</a></li>
+            </ul>
+        </nav>
+    </body>
+</html>
