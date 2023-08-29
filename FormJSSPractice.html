@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            li{
+                list-style: none;
+                padding: 0px;
+            }
+        </style>
+
+    <script>
+        function createEmail(){
+            let fName = document.getElementById("firstName").value, lName = document.getElementById("surName").value;
+            //alert(fName.charAt(0) + "." lName + "@my.waketech.edu");
+            output = `${fName.charAt(0)}.${lName}@my.waketech.edu`;
+            alert(output)
+        }
+    </script>
+    <noscript>
+            Javascript must be enabled.
+    </noscript> 
+    </head>
+    <body>
+
+
+        <form id="formOne" action="#" method="get">
+            <fieldset>
+                <legend>Enter your name:</legend>
+                <ul>
+                    <li>
+                        <label for="firstName">First Name</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="John">
+                    </li>
+                    <li>
+                        <label for="surName">Last Name</label>
+                        <input type="text" name="surName" id="surName" placeholder="Smith"></input>
+                    </li>
+                    <button type="button" onclick="createEmail()">Create Email</button>
+                </ul>
+            </fieldset>
+    </body>
+</html>
